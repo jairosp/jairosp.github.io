@@ -1,3 +1,8 @@
+:root{
+    --header-gradient: linear-gradient(to right, rgba(4,6,52,1) 0%, rgba(12,52,108,1) 100%);
+    --main-blue: #0a2b61;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +15,7 @@ header{
     width: 100%;
     min-width: 320px;
     height: 125px;
-    background: linear-gradient(to right, rgba(4,6,52,1) 0%, rgba(12,52,108,1) 100%);
+    background: var(--header-gradient);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,4 +46,55 @@ header .header-nav--ul li a{
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 1.3rem;
+}
+
+main .description{
+    width: 90%;
+    height: auto;
+    padding: 15px;
+    margin: 10px auto;
+    border: solid black 2px;
+    border-radius: 4px;
+    background-color:var(--main-blue);
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.1rem;
+}
+main .description h1{
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+main .description p{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: 300px;
+
+    text-align: justify;
+}
+
+main .blog{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    padding: 15px;
+    margin: 0 auto;
+    border: solid black 2px;
+    border-radius: 4px;
+    background-color: var(--main-blue);
+    color: #FFF;
+}
+main .blog h1{
+    font-size: 1.8rem;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+}
+
+main .blog p{
+    font-size: 1.2rem;
+    font-family: 'DM Sans', sans-serif;
+    text-align: justify;
 }
